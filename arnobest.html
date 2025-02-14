@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you love me?</title>
+</head>
+
+<body>
+    <!-- b83938! -->
+
+    <!--#6119ff-->
+    <div class="x">
+        <p style="display: none;">
+            VALENTINES HEARTS
+        </p>
+
+        <style>
+            /* customizable heart styling */
+            .heart {
+                color: #800000;
+                font-size: 2em;
+                font-family: Arial, sans-serif;
+                text-shadow: 0 0 5px #ffffff;
+            }
+
+
+            @-webkit-keyframes hearts-fall {
+                0% {
+                    top: -10%
+                }
+
+                100% {
+                    top: 100%
+                }
+            }
+
+            @-webkit-keyframes hearts-shake {
+
+                0%,
+                100% {
+                    -webkit-transform: translateX(0);
+                    transform: translateX(0)
+                }
+
+                50% {
+                    -webkit-transform: translateX(80px);
+                    transform: translateX(80px)
+                }
+            }
+
+            @keyframes hearts-fall {
+                0% {
+                    top: -10%
+                }
+
+                100% {
+                    top: 100%
+                }
+            }
+
+            @keyframes hearts-shake {
+
+                0%,
+                100% {
+                    transform: translateX(0)
+                }
+
+                50% {
+                    transform: translateX(80px)
+                }
+            }
+
+            .heart {
+                position: fixed;
+                top: -10%;
+                z-index: 9999;
+                -webkit-animation-name: hearts-fall, hearts-shake;
+                animation-duration: 10s, 3s;
+                -webkit-animation-timing-function: linear, ease-in-out;
+                -webkit-animation-iteration-count: infinite, infinite;
+                -webkit-animation-play-state: running, running;
+                animation-name: hearts-fall, hearts-shake;
+                animation-duration: 10s, 3s;
+                animation-timing-function: linear, ease-in-out;
+                animation-iteration-count: infinite, infinite;
+                animation-play-state: running, running
+            }
+
+            .heart:nth-of-type(0) {
+                left: 1%;
+                -webkit-animation-delay: 0s, 0s;
+                animation-delay: 0s, 0s
+            }
+
+            .heart:nth-of-type(1) {
+                left: 10%;
+                -webkit-animation-delay: 1s, 1s;
+                animation-delay: 1s, 1s
+            }
+
+            .heart:nth-of-type(2) {
+                left: 20%;
+                -webkit-animation-delay: 6s, .5s;
+                animation-delay: 6s, .5s
+            }
+
+            .heart:nth-of-type(3) {
+                left: 30%;
+                -webkit-animation-delay: 4s, 2s;
+                animation-delay: 4s, 2s
+            }
+
+            .heart:nth-of-type(4) {
+                left: 40%;
+                -webkit-animation-delay: 2s, 2s;
+                animation-delay: 2s, 2s
+            }
+
+            .heart:nth-of-type(5) {
+                left: 50%;
+                -webkit-animation-delay: 8s, 3s;
+                animation-delay: 8s, 3s
+            }
+
+            .heart:nth-of-type(6) {
+                left: 60%;
+                -webkit-animation-delay: 6s, 2s;
+                animation-delay: 6s, 2s
+            }
+
+            .heart:nth-of-type(7) {
+                left: 70%;
+                -webkit-animation-delay: 2.5s, 1s;
+                animation-delay: 2.5s, 1s
+            }
+
+            .heart:nth-of-type(8) {
+                left: 80%;
+                -webkit-animation-delay: 1s, 0s;
+                animation-delay: 1s, 0s
+            }
+
+            .heart:nth-of-type(9) {
+                left: 90%;
+                -webkit-animation-delay: 3s, 1.5s;
+                animation-delay: 3s, 1.5s
+            }
+
+            .heart:nth-of-type(10) {
+                left: 25%;
+                -webkit-animation-delay: 2s, 0s;
+                animation-delay: 2s, 0s
+            }
+
+            .heart:nth-of-type(11) {
+                left: 65%;
+                -webkit-animation-delay: 4s, 2.5s;
+                animation-delay: 4s, 2.5s
+            }
+        </style>
+        <div class="hearts" aria-hidden="true">
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+            <div class="heart">
+                &#10084;
+            </div>
+
+        </div>
+        <div class="text">
+            <span id="c">Do you love me?</span>
+            <div class="buttons">
+                <div class="button_yes button" id="_yes">
+                    YES
+                </div>
+                <div class="button_no button" id="_no">
+                    NO
+                </div>
+            </div>
+        </div>
+
+        <style>
+            body {
+                width: auto;
+                background-color: #cecece;
+            }
+
+            .text {
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .text span {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                color: #6119ff;
+                font-size: 40px;
+            }
+
+            .text .buttons {
+                display: flex;
+                width: 400px;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+            .text .button {
+                height: 50px;
+                width: 90px;
+                padding: 0 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3%;
+                color: rgb(182, 179, 179);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .text #_yes {
+                background-color: rgba(1, 107, 107, 0.781);
+            }
+
+            .text #_no {
+                background-color: rgba(107, 1, 1, 0.781);
+            }
+
+            @keyframes shake {
+
+                10%,
+                90% {
+                    transform: translate3d(-1px, 0, 0);
+                    transform: translate3d(-1px, -1px, 0);
+                }
+
+                20%,
+                80% {
+                    transform: translate3d(2px, -2px, 0);
+                }
+
+                30%,
+                50%,
+                70% {
+                    transform: translate3d(-4px, 4px, 0);
+                }
+
+                40%,
+                60% {
+                    transform: translate3d(4px, -4px, 0);
+                }
+            }
+        </style>
+
+        <script>
+            function d(id) {
+                return document.getElementById(id);
+            }
+
+            let yes = d('_yes');
+            let no = d('_no');
+            let m = d('c');
+
+            yes.addEventListener('click', () => {
+                m.innerText = `I LOVE YOU TOOOOOOOOOOOOOOOOO`;
+
+                m.style.fontSize = `60px`;
+                m.style.color = 'red';
+            })
+
+            let i = 0;
+
+            no.addEventListener('click', () => {
+                m.style.animation = `shake 0.82s infinite cubic-bezier(.36,.07,.19,.97) both`;
+                document.body.style.animation = `shake 0.82s infinite cubic-bezier(.36,.07,.19,.97) both`;
+                m.innerText = `YOU HAVE TO LOVE ME..`;
+
+                let a = [
+                    {
+                        h_n: "30px",
+                        w_n: "70px",
+                        h_y: "60px",
+                        w_y: "100px",
+                    },
+                    {
+                        h_n: "20px",
+                        w_n: "60px",
+                        h_y: "70px",
+                        w_y: "110px",
+                    },
+                    {
+                        h_n: "10px",
+                        w_n: "50px",
+                        h_y: "80px",
+                        w_y: "120px",
+                    }
+                ]
+
+                no.style.height = `${a[i].h_n}`
+                no.style.width = `${a[i].w_n}`
+                yes.style.height = `${a[i].h_y}`
+                yes.style.width = `${a[i].w_y}`
+
+                i++;
+            })
+        </script>
+</body>
+
+</html>
